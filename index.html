@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="Programoutcome.css">
+    <script>
+        function firstform(){
+            var course=document.programform.course.value;
+            var programtitle=document.programform.programtitle.value;
+            reg1=/^([A-Za-z]+)$/;
+            var textarea=document.programform.textarea.value;
+            var two=document.programform.two.value;
+            var three=document.programform.three.value;
+            var four=document.programform.four.value;
+            var five=document.programform.five.value;
+            var six=document.programform.six.value;
+            var seven=document.programform.seven.value;
+            var outcome1=document.programform.outcome1.value;
+            var outcome2=document.programform.outcome2.value;
+            
+
+            if(programtitle==""){
+                alert("Please enter your Program Title");
+                return false;
+            }
+
+            if(!programtitle.match(reg1)){
+                alert("Enter your program title properly");
+                return false;
+            }
+
+            if(textarea==""){
+                alert("Enter the Outcome 1");
+                return false;
+            }
+
+            if(two==""){
+                alert("Enter the Outcome 2");
+                return false;
+            }
+           
+            if(three==""){
+                alert("Enter the Outcome 3");
+                return false;
+            }
+
+            if(four==""){
+                alert("Enter the Outcome 4");
+                return false;
+            }
+
+            if(five==""){
+                alert("Enter the Outcome 5");
+                return false;
+            }
+
+            if(six==""){
+                alert("Enter the Outcome 6");
+                return false;
+            }
+
+            if(seven==""){
+                alert("Enter the Outcome 7");
+                return false;
+            }
+
+            if(outcome1==""){
+                alert("Enter the Specific Outcome 1");
+                return false;
+            }
+
+            if(outcome2==""){
+                alert("Enter the Specific Outcome 2");
+                return false;
+            }
+
+            
+        }
+    </script>
+</head>
+<body>
+    
+
+            <br/><br/>
+            <form name="programform" onsubmit="return firstform()"/>
+
+            <br/>
+            
+            <p class="pfields">Course Code:<select class="inputfields" name="course" required>
+                <option selected disabled
+                value="">Course Code</option>
+                <option>22BB11C2</option>
+                <option>17UC0009</option>
+                <option>12BS115</option>
+                <option>18CS21B3</option>
+                <option>19EC34T2</option>
+                <option>17ME65R1</option>
+                <option>18CS87C9</option>
+            </select></p>
+
+            <p class="pfields">Program Title:<input type="text" placeholder="Enter program title" class="inputfields" name="programtitle"/></p>
+            <p class="pfields">Program Outcome-1:
+                <textarea type="text"
+                name="textarea"
+                placeholder="Type Here"
+                rows="3"
+                cols="3"
+                class="textfields"></textarea>
+            </p>
+
+            <p class="pfields">Program Outcome-2:
+                <textarea type="text"
+                name="two"
+                placeholder="Type Here"
+                rows="3"
+                cols="3"
+                class="textfields"></textarea>
+            </p>
+
+            <p class="pfields">Program Outcome-3:
+                <textarea type="text"
+                name="three"
+                placeholder="Type Here"
+                rows="3"
+                cols="3"
+                class="textfields"></textarea>
+            </p>
+
+            <p class="pfields">Program Outcome-4:
+                <textarea type="text"
+                name="four"
+                placeholder="Type Here"
+                rows="3"
+                cols="3"
+                class="textfields"></textarea>
+            </p>
+
+            <p class="pfields">Program Outcome-5:
+                <textarea type="text"
+                name="five"
+                placeholder="Type Here"
+                rows="3"
+                cols="3"
+                class="textfields"></textarea>
+            </p>
+
+            <p class="pfields">Program Outcome-6:
+                <textarea type="text"
+                name="six"
+                placeholder="Type Here"
+                rows="3"
+                cols="3"
+                class="textfields"></textarea>
+            </p>
+
+            <p class="pfields">Program Outcome-7:
+                <textarea type="text"
+                name="seven"
+                placeholder="Type Here"
+                rows="3"
+                cols="3"
+                class="textfields"></textarea>
+            </p>
+
+
+            <p class="pfields">Program Specific Outcome-1:
+                <input type="text"
+                placeholder="Outcome"
+                name="outcome1"
+                class="outcomefield"/>
+            </p>
+
+            <p class="pfields">Program Specific Outcome-2:
+                <input type="text"
+                placeholder="Outcome"
+                name="outcome2"
+                class="outcomefield"/>
+            </p>
+
+            
+           
+                    <br/>
+            <input type="submit" class="submitbutton" value="submit"/>
+            </form>
+
+    </div><br/><br/>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+

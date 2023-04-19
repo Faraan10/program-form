@@ -1,0 +1,37 @@
+*{
+    margin:0%;
+}
+
+.pfields{
+    margin-left:50px;
+}
+
+.inputfields{
+    margin-top:20px;
+    border-radius:5px;
+    width:20%;
+    border-style:double;
+    margin-left:160px;
+}
+
+.textfields{
+    margin-top:20px;
+    border-radius:5px;
+    width:20%;
+    margin-left:100px;
+}
+
+.outcomefield{
+    margin-top:20px;
+    border-radius:5px;
+    width:20%;
+    border-style:double;
+    margin-left:40px;
+}
+
+.submitbutton{
+    margin-left:20%;
+    border-radius:5px;
+    border-color:none;
+    margin-top:20px;
+}
